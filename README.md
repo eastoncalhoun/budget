@@ -2,7 +2,7 @@
 A lightweight C++ web application for tracking personal income and expenses with real-time budget calculations.
 Features
 
-Track income sources and expenses with optional URLs
+Immediate access to expenses pay page's with URLs inputted
 Automatic profit/loss calculations with color coding
 Server-side HTML rendering with Inja templates
 SQLite database for persistent storage
