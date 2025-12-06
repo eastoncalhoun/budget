@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budget</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+
+</head>
+<body>
+    <h1 class="Landing">Budget</h1>
+    <div class="Column" id="stats">
+        <div class="Container">
+            <span class="Stats">Total Income: <span class="Dinero">$</span><span class="Green">{{totalIn}}</span></span>
+            <span class="Stats">Total Expenses: <span class="Dinero">$</span><span class="Red">{{totalEx}}</span></span>
+            <span class="Stats">Profit: <span class="Dinero">$</span><span class={{profitClass}}>{{profit}}</span></span>
+        </div>
+    </div>
+    <div class="Container">
+        <div class="Column" id="incomes">
+            <h1 class="Title">Income</h1>
+
+            <ul class="Expendable">
+            {% for income in incomes %}
+                <li>{{income.name}} : <span class="Dinero">$</span> {{income.amount}}</li>
+            {% endfor %}
+            </ul>
+            
+        </div>
+        <div class="Column" id="expenses">
+            <h1 class="Title">Expenses</h1>
+
+            <ul class="Expendable">
+            {% for expense in expenses %}
+                <a href="{{expense.url}}" target="_blank"><li>{{expense.name}}: <span class="Dinero">$</span> {{expense.amount}}</li></a>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="Container">
+        <div class="Column">            
+            <form class="Setter" action="/api/set_income" method="post">
+                <h2>Set Income</h2>
+                <input class="Submit" type="text" name="name" placeholder="Income Name">
+                <input class="Submit" type="number" name="amount" placeholder="Income Amount">
+                <button class="Submit" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="Column">
+            <form class="Setter" action="/api/set_expense" method="post">
+                <h2>Set Expense</h2>
+                <input class="Submit" type="text" name="name" placeholder="Expense Name">
+                <input class="Submit" type="number" name="amount" placeholder="Expense Amount">
+                <input class="Submit" type="url" name="url" placeholder="Expense Url">
+                <button class="Submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <a id="help" href="/help">Help</a>
+</body>
+</html>

@@ -1,0 +1,164 @@
+body {
+    background-image: url("https://wallpapercat.com/w/full/5/1/a/28851-3840x2160-desktop-4k-uranus-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vw;
+    color: #f6a85a;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#incomes {
+    width: 40%;
+}
+
+#expenses {
+    width: 40%;
+}
+
+#stats {
+    width: 100vw;
+    padding: 32px 0px;
+    border: 2px solid #ff8d3a;
+    border-right: 0;
+    border-radius: 0;
+}
+
+#help {
+    font-weight: bolder;
+    color:#B22222;
+}
+
+.Stats {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffd5a2;
+    padding: 0 16px;
+}
+
+.Column {
+    padding: 0px 20px 20px 20px;
+    margin: 20px;
+    background: #141414;
+    border-radius: 12px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.Internal {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.Landing {
+    color: #ffb76b;
+    font-size: 64px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Anton', monospace;
+}
+
+.Title {
+    color: #ffb76b;
+    font-size: 32px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff8d3a;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.Expendable {
+    list-style: none;
+    padding-left: 0;
+}
+
+.Expendable li {
+    background: rgba(255, 255, 255, 0.03);
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffd5a2;
+    font-size: 18px;
+    transition: background 0.2s ease;
+    border-left: 3px solid #ff8d3a;
+    text-align: center;
+}
+
+.Expendable li:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+a {
+    color: #ffa558;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #CFB53B;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0px;
+    width: 100%;
+}
+
+.Dinero {
+    color: #CFB53B;
+}
+
+.Green {
+    color: #32CD32;
+}
+
+.Red {
+    color: #B22222;
+}
+
+.Setter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+.Submit {
+    width: 100%;
+    margin: 1px 0px;
+    padding: 8px 0px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: #ffd5a2;
+    background: rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+.Submit:hover {
+    background: rgba(255, 255, 255, -0.0);
+}
+

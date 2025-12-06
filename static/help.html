@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budget</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+
+</head>
+<body>
+    <h1 class="Landing">Budget</h1>
+    <div class="Column" id="stats">
+        <h1 class="Title">Stats</h1>
+        <div class="Container">
+            <span class="Stats">Total Income: <span class="Dinero">$</span><span class="Green">{{totalIn}}</span></span>
+            <span class="Stats">Total Expenses: <span class="Dinero">$</span><span class="Red">{{totalEx}}</span></span>
+            <span class="Stats">Profit: <span class="Dinero">$</span><span class={{profitClass}}>{{profit}}</span></span>
+        </div>
+    </div>
+    <div class="Column">
+        <h1 class="Title">Help</h1>
+        <p>Q - How can I delete an income or an expense?</p>
+        <p>A - By setting the amount to 0!</p>
+    </div>
+    <a id="help" href="/">Main</a>
+</body>
+</html>
