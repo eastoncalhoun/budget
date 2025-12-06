@@ -1,12 +1,13 @@
 # Budget Tracker - Example Suffer Project
 A lightweight C++ web application for tracking personal income and expenses with real-time budget calculations.
-Features
 
-Immediate access to expenses pay page's with URLs inputted
-Automatic profit/loss calculations with color coding
-Server-side HTML rendering with Inja templates
-SQLite database for persistent storage
-Multithreaded web server
+# Features
+
+- Immediate access to expenses pay page's with URLs inputted
+- Automatic profit/loss calculations with color coding
+- Server-side HTML rendering with Inja templates
+- SQLite database for persistent storage
+- Multithreaded web server
 
 # Tech Stack
 
