@@ -23,7 +23,6 @@ suffer install soci
 suffer install Crow
 suffer install inja
 
-suffer import json
 suffer import soci
 suffer import Crow
 suffer import inja
